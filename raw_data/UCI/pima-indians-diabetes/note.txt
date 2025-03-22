@@ -1,0 +1,3 @@
+https://github.com/lstruski/Processing-of-missing-data-by-neural-networks/tree/master/data_rbfn/pima
+
+M. Śmieja, Ł. Struski, J. Tabor, B. Zieliński, and P. Spurek, "Processing of missing data by neural networks," Adv Neural Inf Process Syst, vol. 31, 2018.
