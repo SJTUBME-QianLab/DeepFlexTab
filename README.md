@@ -6,7 +6,7 @@ This repository holds the code for the paper
 
 All the materials released in this library can **ONLY** be used for **RESEARCH** purposes and not for commercial use.
 
-The authors' institution (School of Biomedical Engineering, Shanghai Jiao Tong University) preserve the copyright and all legal rights of these codes.
+The authors' institution preserve the copyright and all legal rights of these codes.
 
 # Author List
 
@@ -104,20 +104,16 @@ bash example_nat1.sh
    # generate data csv for experiments from raw database
    cd ./preprocessing/
    python data_generate_TADPOLE.py --data_root ./../data/ --data_name nat1
-   python data_generate_TADPOLE.py --data_root ./../data/ --data_name nat2
    
    # get missing patterns and statistics
    python refine_miss.py --data_root ./../data/ --data_name nat1
-   python refine_miss.py --data_root ./../data/ --data_name nat2
    
    # get 1 split for 5-CV
    python data_process_nat.py --data_root ./../data/ --data_name nat1 --rand 1
-   python data_process_nat.py --data_root ./../data/ --data_name natme nat2 --job 5
    
    # repeat 10 times (10 splits with 5-CV)
    cd ./reproducibility/
    python data_process_batch.py --data_root ./../data/ --data_name nat1 --job 5
-   python data_process_batch.py --data_root ./../data/ --data_name nat2 --job 5
    ```
 
 3. Naturally incomplete datasets from UCI
